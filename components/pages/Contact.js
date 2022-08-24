@@ -3,6 +3,13 @@ import { validateEmail } from '../../utils/helpers';
 
 export default function Contact() {
 
+    // Create our state variables and leave them empty until filled
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+
+
   return (
     <div>
       <form className="form">
