@@ -9,7 +9,7 @@ Skills:
 - state hooks and using states/ effects
 - props
 - JSX for rendering content on the page
-- forms?
+- forms to allow people to contact
 - conditional rendering for navigating pages
 
 ## License
