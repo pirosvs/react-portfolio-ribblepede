@@ -15,7 +15,30 @@ export default function Contact() {
     const inputType = target.name;
     const inputValue = target.value;
 
-
+    // Set our states based on which was entered using inputType
+    if (inputType === 'name') {
+        setName(inputValue);
+    } else if (inputType === 'email') {
+        setEmail(inputValue);
+    } else {
+        setMessage(inputValue);
+    }
+  };
+  
+    const handleFormSubmit = (e) => {
+      e.preventDefault();
+  
+      // Check there our fields aren't empty & email is valid
+      if (!validateEmail(email) || !name || !message) {
+        setErrorMessage('Please fill out all form fields and enter a valid email address');
+        return;
+      }
+  
+      // Empty our fields if the form submits
+      setName('');
+      setEmail('');
+      setMessage('');
+    };
 
   return (
     <div>
