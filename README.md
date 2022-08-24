@@ -7,7 +7,10 @@ Purpose:
 Skills:
 - react.
 - state hooks and using states/ effects
-- maybe other things
+- props
+- JSX for rendering content on the page
+- forms?
+- conditional rendering for navigating pages
 
 ## License
 This project falls under the MIT license.
